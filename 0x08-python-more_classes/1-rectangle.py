@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Class implementation for Rectangle """
 class Rectangle:
     """ A Rectangle class """
     def __init__(self, width=0, height=0):
