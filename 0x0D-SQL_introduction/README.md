@@ -1,0 +1,1 @@
+SQL, or Structured Query Language, is a standardized programming language designed for managing and manipulating relational databases. SQL is used for various tasks such as querying data, updating records, inserting new data, and deleting existing data. Here are some key aspects of SQL:
