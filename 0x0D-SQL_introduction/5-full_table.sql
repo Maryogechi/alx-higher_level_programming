@@ -1,7 +1,3 @@
--- Create table in current database of the mysql server
--- Create a table 'first_table' in current DB
+-- Print the full description of table from DB in mysql server
 
-CREATE TABLE IF NOT EXISTS first_table (
-    id INT,
-    name VARCHAR(256)
-)
+SHOW CREATE TABLE first_table;
