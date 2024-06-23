@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 const args = process.argv.slice(2); // Get command-line arguments, excluding the first two default ones
 
 // Function to add two numbers
