@@ -5,9 +5,19 @@ class Rectangle {
     this.height = h;
   }
 }
-// Creating an instance of Rectangle with width 5 and height 10
-const rect = new Rectangle(2, 3);
 
-// Accessing instance attributes
-console.log(rect.width); // Output: 2
-console.log(rect.height); // Output: 3
+// Test cases with specified output
+const rect1 = new Rectangle(2, 3);
+console.log(rect1); // Output: Rectangle { width: 2, height: 3 }
+console.log(rect1.width); // Output: 2
+console.log(rect1.height); // Output: 3
+
+const rect2 = new Rectangle(2, -3);
+console.log(rect2); // Output: Rectangle { width: 2, height: -3 }
+console.log(rect2.width); // Output: 2
+console.log(rect2.height); // Output: -3
+
+const rect3 = new Rectangle(2);
+console.log(rect3); // Output: Rectangle { width: 2, height: undefined }
+console.log(rect3.width); // Output: 2
+console.log(rect3.height); // Output: undefined
