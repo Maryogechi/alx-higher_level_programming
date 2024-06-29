@@ -38,8 +38,8 @@ if __name__ == "__main__":
     cursor.execute(query)
 
     rows = cursor.fetchall()
-    for r in rows:
-        print(r)
+    for row in rows:
+        print(row)
 
 
 # Close cursor and connection

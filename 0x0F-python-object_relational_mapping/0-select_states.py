@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+script that lists all states from the database
+hbtn_0e_0_usa and takes three arguments
+
+"""
 
 import MySQLdb
 import sys
