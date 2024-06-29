@@ -21,6 +21,6 @@ if (args.length !== 2) {
       console.log("Missing or invalid integers");
   } else {
       // Call the add function and print the result
-      console.log(`The result of addition is: ${add(firstInt, secondInt)}`);
+      console.log(`The result of addition is: ${ad
   }
 }
