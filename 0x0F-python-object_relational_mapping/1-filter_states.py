@@ -7,8 +7,8 @@ Note: database name is passed as argument to the script.
 # Ensuring code cant execute when imported
 if __name__ == "__main__":
     # Import the modules
-    import MySQLdb
     import sys
+    import MySQLdb
 
     # Assigning the arguments with their index
     username = sys.argv[1]
@@ -38,4 +38,3 @@ if __name__ == "__main__":
     # Close cursor and connection
     cursor.close()
     db.close()
-    
