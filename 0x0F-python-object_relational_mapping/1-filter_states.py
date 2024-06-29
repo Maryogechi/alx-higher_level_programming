@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
-import MySQLdb
-import sys
+"""
+This script contains a function that lists all
+states with a name starting with N from the database hbtn_0e_0_usa
+Note: database name is passed as an argument to the script
+"""
 
+# Ensuring code cant execute when imported
 if __name__ == "__main__":
+    #import the modules
+    import MySQLdb
+    import sys
+
     # Get command-line arguments
     username = sys.argv[1]
     password = sys.argv[2]
