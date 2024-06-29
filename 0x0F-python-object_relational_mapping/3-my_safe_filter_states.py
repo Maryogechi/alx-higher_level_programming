@@ -27,21 +27,13 @@ if __name__ == "__main__":
         db=db_name
     )
 
-# Create a cursor
     cursor = db.cursor()
+    query = "SELECT id, name FROM states WHERE name =%s"
 
-# Create query
-    query = "SELECT * FROM states WHERE BINARY name = '{}' ORDER BY states.id"\
-        .format(state)
-
-# Execute query
-    cursor.execute(query)
-
-    rows = cursor.fetchall()
-    for row in rows:
-        print(row)
-
-    cursor = db.cursor()
+    cursor.execute(query, (state),)
+    result = cursor.fetchall()
+    for item in result:
+        print(item)
 
 # Close cursor and connection
     cursor.close()
