@@ -5,10 +5,11 @@ hbtn_0e_0_usa and takes three arguments
 
 """
 
-import MySQLdb
-import sys
 
 if __name__ == "__main__":
+
+    import MySQLdb
+    import sys
 
     mysql_username = sys.argv[1]
     mysql_password = sys.argv[2]
@@ -22,8 +23,10 @@ if __name__ == "__main__":
         db=database_name
     )
 
+    query = "SELECT * FROM states ORDER BY states.id ASC"
+
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute(query)
     rows = cursor.fetchall()
 
     for row in rows:
