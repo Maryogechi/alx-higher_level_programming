@@ -8,8 +8,8 @@ Note: database name is passed as argument to the script.
 """
 
 if __name__ == "__main__":
-    import sys
     import MySQLdb
+    import sys
 
 # Assign cmd arguments to the input
 
